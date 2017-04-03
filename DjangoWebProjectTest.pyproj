@@ -6,6 +6,7 @@
     <RootNamespace>DjangoWebProjectTest</RootNamespace>
     <InterpreterId>{00df33fc-696e-4e69-81aa-ea84d3414679}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>localhost</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,6 +41,9 @@
     <Compile Include="DjangoWebProjectTest\settings.py" />
     <Compile Include="DjangoWebProjectTest\urls.py" />
     <Compile Include="DjangoWebProjectTest\wsgi.py" />
+    <Compile Include="ptvs_virtualenv_proxy.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -52,8 +56,13 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="DjangoWebProjectTest\" />
+    <Folder Include="Metadata\" />
+    <Folder Include="Metadata\deploymentTemplates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apiapp.json" />
+    <None Include="localhost.pubxml" />
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
@@ -84,6 +93,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="runtime.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">
